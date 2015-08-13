@@ -1,0 +1,7 @@
+tmp
+.DS_Store
+.sass-cache
+.ruby-version
+bower_components
+node_modules
+_site
