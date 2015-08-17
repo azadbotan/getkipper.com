@@ -1,18 +1,74 @@
 ---
 layout: default
 ---
-<div class='home'>
-  <h1 class='page-heading'>
-    Hello!
-  </h1>
-  <ul class='post-list'>
-    {% for post in site.posts %}
-    <li>
-      <span class='post-meta'>{{ post.date | date: "%b %-d, %Y" }}</span>
-      <h2>
-        <a class='post-link' href='{{ post.url | prepend: site.baseurl }}'>{{ post.title }}</a>
-      </h2>
-    </li>
-    {% endfor %}
-  </ul>
+<div class='row brand'>
+  <div class='container'>
+    <h1 class='brand-name'>
+      {{ site.title }}
+    </h1>
+    <p class='brand-description'>
+      {{ site.description }}
+    </p>
+    <div class='brand-actions'>
+      <a class='button reversed' href='#'>
+        See it in action
+      </a>
+      <a class='button reversed' href='{{ site.app_url }}'>
+        Get Kipper
+      </a>
+    </div>
+  </div>
+</div>
+<div class='row'>
+  <div class='container'>
+    <div class='screenshot'>
+      <img alt='' src='//placehold.it/734x1304'>
+    </div>
+    <ol class='features'>
+      <li class='feature'>
+        <h4 class='feature-title'>
+          All the sizes
+        </h4>
+        <p class='feature-desc'>
+          Kipper exports all the various dimensions you need.
+        </p>
+      </li>
+      <li class='feature'>
+        <h4 class='feature-title'>
+          All your fonts
+        </h4>
+        <p class='feature-desc'>
+          Enjoy the flexibility of a native text editor.
+        </p>
+      </li>
+      <li class='feature'>
+        <h4 class='feature-title'>
+          All the devices
+        </h4>
+        <p class='feature-desc'>
+          Kipper’s got you covered for iPhone and iPad.
+        </p>
+      </li>
+      <li class='feature'>
+        <h4 class='feature-title'>
+          All on your computer
+        </h4>
+        <p class='feature-desc'>
+          Your sceenshots are a local document. No internet required!
+        </p>
+      </li>
+    </ol>
+  </div>
+</div>
+<div class='row grey inspiration'>
+  <div class='container'>
+    <h2 class='inspiration-title'>
+      Visit our gallery of great screenshot examples
+    </h2>
+  </div>
+  <div class='inspiration-teaser'>
+    <a class='button wide' href='#'>
+      Get inspired!
+    </a>
+  </div>
 </div>

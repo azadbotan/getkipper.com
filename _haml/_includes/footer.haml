@@ -1,5 +1,18 @@
-%footer.site-footer
-  %h2.footer-heading
-    {{ site.title }}
+%footer.footer.row.brand{ role: 'contentinfo' }
+  .container
+    %nav.site-links
+      %a.site-link{ href: '{{ site.app_url }}' }
+        Purchase
+      %a.site-link{ href: "mailto:hello@seasalt.io?subject=Kipper%20Support" }
+        Support
+      %a.site-link{ href: "//twitter.com/{{ site.twitter_username }}" }
+        Twitter
+
+    .footer-credit
+      {{ site.title }} is by
+      %a{ href: '//seasalt.io' }
+        sea/salt
 
 %script{ src: "/assets/js/main.js?#{Time.now.to_i}" }
+
+/ UA-66211405-1

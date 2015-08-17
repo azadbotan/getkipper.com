@@ -2,14 +2,53 @@
 layout: default
 \---
 
-.home
-  %h1.page-heading
-    Hello!
+.row.brand
+  .container
+    %h1.brand-name
+      {{ site.title }}
 
-  %ul.post-list
-    {% for post in site.posts %}
-    %li
-      %span.post-meta {{ post.date | date: "%b %-d, %Y" }}
-      %h2
-        %a.post-link{ href: '{{ post.url | prepend: site.baseurl }}' } {{ post.title }}
-    {% endfor %}
+    %p.brand-description
+      {{ site.description }}
+
+    .brand-actions
+      %a.button.reversed{ href: '#' }
+        See it in action
+
+      %a.button.reversed{ href: '{{ site.app_url }}' }
+        Get Kipper
+
+
+.row
+  .container
+    .screenshot
+      %img{ src: '//placehold.it/734x1304', alt: '' }
+    %ol.features
+      %li.feature
+        %h4.feature-title
+          All the sizes
+        %p.feature-desc
+          Kipper exports all the various dimensions you need.
+      %li.feature
+        %h4.feature-title
+          All your fonts
+        %p.feature-desc
+          Enjoy the flexibility of a native text editor.
+      %li.feature
+        %h4.feature-title
+          All the devices
+        %p.feature-desc
+          Kipper’s got you covered for iPhone and iPad. 
+      %li.feature
+        %h4.feature-title
+          All on your computer
+        %p.feature-desc
+          Your sceenshots are a local document. No internet required!
+
+.row.grey.inspiration
+  .container
+    %h2.inspiration-title
+      Visit our gallery of great screenshot examples
+
+  .inspiration-teaser
+    %a.button.wide{ href: '#' }
+      Get inspired!

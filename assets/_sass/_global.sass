@@ -6,3 +6,31 @@ p, blockquote, pre, hr,
 dl, dd, ol, ul, figure
   margin: 0
   padding: 0
+
+body
+  +sans-lt
+  background-color: $brand-color
+
+h1, h2, h3, h4, h5, h6
+  +sans-semi
+
+img
+  display: inline-block
+  max-width: 100%
+
+.container
+  +container
+  padding-left: $grid-padding
+  padding-right: $grid-padding
+
+
+.row
+  +vertical-spacing(padding, 2)
+  background-color: white
+  width: 100%
+
+  &.brand
+    background-color: $brand-color
+
+  &.grey
+    background-color: $grey-lt

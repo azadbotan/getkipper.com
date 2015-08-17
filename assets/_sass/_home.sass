@@ -1,0 +1,110 @@
+.brand
+  text-align: center
+
+
+.brand-name
+  +antialiased
+  border-bottom: 1px solid white
+  color: white
+  display: inline-block
+  font-size: 32px
+  margin-bottom: 30px
+
+  +desktop
+    font-size: 40px
+    margin-bottom: 48px
+
+
+.brand-description
+  +antialiased
+  color: white
+  font-size: 24px
+  margin-bottom: 30px
+
+  +tablet-up
+    width: span(10)
+    margin: 0 auto 48px
+
+  +desktop
+    font-size: 36px
+
+.brand-actions .button
+  margin: 0 10px
+
+  +tablet-down
+    width: 100%
+
+.brand-actions .button:first-child
+  +tablet-down
+    margin-bottom: 12px
+
+
+// Features list
+
+.screenshot
+  +tablet-down
+    display: none
+
+  +desktop
+    +span(5)
+    +push(1)
+    display: block
+
+.features
+  list-style: none
+
+  +tablet
+    width: span(10)
+    margin: 0 auto
+
+  +desktop
+    +span(5)
+
+.feature
+  border-bottom: 1px solid #E1E1E1
+  margin-bottom: 24px
+  padding-bottom: 24px
+  
+  +desktop
+    margin-bottom: 36px
+    padding-bottom: 36px
+
+  &:last-child
+    border: none
+    padding-bottom: 0
+    margin-bottom: 0
+
+.feature-title,
+.feature-desc
+  font-size: 18px
+
+  +desktop
+    font-size: 26px
+
+
+// Inspiration gallery
+.inspiration
+  text-align: center
+
+.inspiration-title
+  +sans-lt
+  font-size: 24px
+  margin-bottom: 36px
+
+  +desktop
+    font-size: 36px
+    width: span(7)
+    margin: 0 auto 48px
+
+.inspiration-teaser
+  background: url('/assets/media/inspiration-bg.png') center center repeat-x 
+
+  +tablet-down
+    background-size: 580px 198px
+    height: 198px
+    padding-top: 60px
+
+  +desktop
+    height: 396px
+    padding-top: 120px
+
