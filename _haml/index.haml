@@ -11,14 +11,13 @@ layout: default
       {{ site.description }}
 
     .brand-actions
-      %a.button.reversed.with-icon{ href: '#' }
+      %a.button.reversed.with-icon#play-kipper-video{ href: '#' }
         %img.button-icon{ src: '/assets/media/play.svg', alt: 'Play video' }
         See it in action
 
       %a.button.reversed.with-icon{ href: '{{ site.app_url }}' }
         %img.button-icon.apple{ src: '/assets/media/logo-apple.svg', alt: 'Apple App Store' }
         Get kipper
-
 
 .row
   .container
@@ -54,3 +53,11 @@ layout: default
   .inspiration-teaser
     %a.button.wide{ href: '#' }
       Get inspired!
+
+#overlay
+  %a#overlay-close
+    %img{ src: '/assets/media/cancel.svg', alt: 'Close' }
+
+  .overlay-content
+    .kipper-video.responsive-iframe
+      #video

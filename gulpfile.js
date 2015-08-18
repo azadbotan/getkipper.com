@@ -40,6 +40,7 @@ gulp.task('coffee', function() {
   gulp.src([
     // This is like the Rails asset pipeline JS manifest
     'assets/_coffee/global.coffee',
+    'assets/_coffee/youtube.coffee',
   ])
     .pipe(sourcemaps.init())
     .pipe(concat('main.coffee'))

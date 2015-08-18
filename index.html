@@ -10,7 +10,7 @@ layout: default
       {{ site.description }}
     </p>
     <div class='brand-actions'>
-      <a class='button reversed with-icon' href='#'>
+      <a class='button reversed with-icon' href='#' id='play-kipper-video'>
         <img alt='Play video' class='button-icon' src='/assets/media/play.svg'>
         See it in action
       </a>
@@ -72,5 +72,15 @@ layout: default
     <a class='button wide' href='#'>
       Get inspired!
     </a>
+  </div>
+</div>
+<div id='overlay'>
+  <a id='overlay-close'>
+    <img alt='Close' src='/assets/media/cancel.svg'>
+  </a>
+  <div class='overlay-content'>
+    <div class='kipper-video responsive-iframe'>
+      <div id='video'></div>
+    </div>
   </div>
 </div>
