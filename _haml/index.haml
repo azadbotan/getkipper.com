@@ -11,11 +11,13 @@ layout: default
       {{ site.description }}
 
     .brand-actions
-      %a.button.reversed{ href: '#' }
+      %a.button.reversed.with-icon{ href: '#' }
+        %img.button-icon{ src: '/assets/media/play.svg', alt: 'Play video' }
         See it in action
 
-      %a.button.reversed{ href: '{{ site.app_url }}' }
-        Get Kipper
+      %a.button.reversed.with-icon{ href: '{{ site.app_url }}' }
+        %img.button-icon.apple{ src: '/assets/media/logo-apple.svg', alt: 'Apple App Store' }
+        Get kipper
 
 
 .row

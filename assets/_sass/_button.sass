@@ -5,9 +5,9 @@
   color: white
   display: inline-block
   padding: 14px 17px
+  position: relative
   text-align: center
   text-decoration: none
-
 
   +desktop
     font-size: 21px
@@ -21,3 +21,27 @@
 
   &.wide
     min-width: 272px
+
+  &.with-icon
+    padding-left: 42px
+
+    +desktop
+      padding-left: 60px
+
+.button-icon
+  left: 10px
+  margin-top: -12px
+  position: absolute
+  top: 50%
+  width: 24px
+
+  +desktop
+    left: 16px
+    margin-top: -15px 
+    width: 30px
+
+  &.apple
+    margin-top: -14px
+
+    +desktop
+      margin-top: -17px
