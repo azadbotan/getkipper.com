@@ -1,35 +1,40 @@
+.footer
+  margin: 0 auto
+  +vertical-spacing(padding, 1, 2)
+  width: span(12)
+
+  +tablet
+    width: span(10)
+
+  +desktop
+    width: span(10)
+
 .site-link,
 .footer-credit
   font-size: 18px
 
   +desktop
-    font-size: 28px
+    font-size: 18px
 
 .site-links
-  margin-bottom: 30px
-
-  +desktop
-    margin-bottom: 42px
+  margin-bottom: 20px
 
 .site-link
   +antialiased
   +sans-semi
-  color: white
-  margin: 0 8px
+  color: $brand-color
   text-decoration: none
-
-  +desktop
-    margin: 0 20px
+  text-transform: uppercase
 
   &:hover,
   &:focus
-    color: $brand-color-lt
     text-decoration: underline
 
 .footer-credit,
 .footer-credit a
-  color: $brand-color-lt
+  color: $brand-color
 
 .footer-credit a:hover,
 .footer-credit a:focus
-  color: white
+  color: $brand-color
+  text-decoration: underline

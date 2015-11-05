@@ -1,17 +1,18 @@
-%footer.footer.row.brand{ role: 'contentinfo' }
+.row
   .container
-    %nav.site-links
-      %a.site-link{ href: '{{ site.app_url }}' }<
-        Purchase
-      %a.site-link{ href: "mailto:hello@seasalt.io?subject=Kipper%20Support" }<
-        Support
-      %a.site-link{ href: "//twitter.com/{{ site.twitter_username }}" }<
-        Twitter
+    %footer.footer{ role: 'contentinfo' }
+      %nav.site-links
+        / %a.site-link{ href: '{{ site.app_url }}' }<
+        /   Purchase
+        %a.site-link{ href: "mailto:hello@seasalt.io?subject=Kipper%20Support"}<
+          Get Support
+        / %a.site-link{ href: "//twitter.com/{{ site.twitter_username }}" }<
+        /   Twitter
 
-    .footer-credit
-      {{ site.title }} is by
-      %a{ href: '//seasalt.io' }
-        sea/salt
+      .footer-credit
+        {{ site.title }} is by
+        %a{ href: '//seasalt.io' }
+          sea/salt
 
 %script{ src: '//www.youtube.com/iframe_api' }
 %script{ src: "//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" }

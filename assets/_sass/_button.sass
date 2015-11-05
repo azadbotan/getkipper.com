@@ -1,14 +1,15 @@
 .button
   +sans-lt
   +antialiased
-  background-color: $brand-color
-  color: white
+  background-color: white
+  color: $brand-color
   display: inline-block
   padding: 14px 17px
   position: relative
   text-align: center
   text-decoration: none
   transition: box-shadow 0.3s ease-in-out
+  border: 1px solid $brand-color
 
   +desktop
     font-size: 21px
@@ -17,8 +18,8 @@
 
   &.reversed
     +disable-antialiased
-    background-color: white
-    color: $brand-color
+    background-color: $brand-color
+    color: white
 
   &.wide
     min-width: 272px

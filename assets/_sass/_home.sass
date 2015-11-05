@@ -1,44 +1,70 @@
 .brand
-  text-align: center
+  text-align: left
 
+.home-top
+  margin: 0 auto
+  +vertical-spacing(padding, 1, 0)
+  width: span(12)
+
+  +tablet
+    width: span(10)
+
+  +desktop
+    width: span(10)
 
 .brand-name
-  +antialiased
-  border-bottom: 1px solid white
-  color: white
-  display: inline-block
-  font-size: 32px
-  margin-bottom: 30px
+  margin-bottom: 32px
 
   +desktop
     font-size: 40px
-    margin-bottom: 48px
+    margin-bottom: 40px
 
+.brand-name img
+  width: 150px
+
+  +tablet-up
+    width: 265px
 
 .brand-description
   +antialiased
-  color: white
   font-size: 24px
-  margin-bottom: 30px
-
-  +tablet-up
-    width: span(10)
-    margin: 0 auto 48px
+  margin-bottom: 32px
 
   +desktop
     font-size: 36px
+    margin-bottom: 40px
 
 .brand-actions .button
-  margin: 0 10px
-
   +tablet-down
     margin: 0
     width: 100%
     max-width: 270px
 
+  +tablet-up
+    width: 220px
+
 .brand-actions .button:first-child
   +tablet-down
-    margin-bottom: 12px
+    margin-bottom: 20px
+  margin-right: 20px
+
+
+// App screenshot
+.home-screenshot
+  +vertical-spacing(padding, 1, 0)
+  margin: 0 auto
+  width: span(12)
+
+  +tablet
+    width: span(10)
+
+  +desktop
+    width: span(10)
+
+.home-screenshot img
+  max-width: 100%
+  position: relative
+  left: -5%
 
 
 // Features list
@@ -66,7 +92,7 @@
   border-bottom: 1px solid #E1E1E1
   margin-bottom: 24px
   padding-bottom: 24px
-  
+
   +desktop
     margin-bottom: 36px
     padding-bottom: 36px
@@ -83,7 +109,6 @@
   +desktop
     font-size: 26px
 
-
 // Inspiration gallery
 .inspiration
   text-align: center
@@ -99,7 +124,7 @@
     margin: 0 auto 48px
 
 .inspiration-teaser
-  background: url('/assets/media/inspiration-bg.png') center center repeat-x 
+  background: url('/assets/media/inspiration-bg.png') center center repeat-x
 
   +tablet-down
     background-size: 580px 198px

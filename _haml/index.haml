@@ -2,57 +2,27 @@
 layout: default
 \---
 
-.row.brand
-  .container
-    %h1.brand-name
-      {{ site.title }}
-
-    %p.brand-description
-      {{ site.description }}
-
-    .brand-actions
-      %a.button.reversed.with-icon#play-kipper-video{ href: '#' }
-        %img.button-icon{ src: '/assets/media/play.svg', alt: 'Play video' }
-        See it in action
-
-      %a.button.reversed.with-icon{ href: '{{ site.app_url }}' }
-        %img.button-icon.apple{ src: '/assets/media/logo-apple.svg', alt: 'Apple App Store' }
-        Get kipper
-
 .row
   .container
-    .screenshot
-      %img{ src: '//placehold.it/734x1304', alt: '' }
-    %ol.features
-      %li.feature
-        %h4.feature-title
-          All the sizes
-        %p.feature-desc
-          Kipper exports all the various dimensions you need.
-      %li.feature
-        %h4.feature-title
-          All your fonts
-        %p.feature-desc
-          Enjoy the flexibility of a native text editor.
-      %li.feature
-        %h4.feature-title
-          All the devices
-        %p.feature-desc
-          Kipper’s got you covered for iPhone and iPad. 
-      %li.feature
-        %h4.feature-title
-          All on your computer
-        %p.feature-desc
-          Your sceenshots are a local document. No internet required!
+    .home-top
+      .brand-name
+        %img{ src: '/assets/media/logo@2x.png', alt: 'Kipper'}
 
-.row.grey.inspiration
+      %p.brand-description
+        {{ site.description }}
+
+      .brand-actions
+        / %a.button.with-icon#play-kipper-video{ href: '#' }
+        /   %img.button-icon{ src: '/assets/media/play.svg', alt: 'Play video' }
+        /   See it in action
+
+        %a.button.with-icon{ href: '#' }
+          %img.button-icon.apple{ src: '/assets/media/logo-apple.svg', alt: 'Apple App Store' }
+          Coming soon
+.row
   .container
-    %h2.inspiration-title
-      Visit our gallery of great screenshot examples
-
-  .inspiration-teaser
-    %a.button.wide{ href: '#' }
-      Get inspired!
+    .home-screenshot
+      %img{ src: '/assets/media/kipper-screenshot.png', alt: 'Kipper in action' }
 
 #overlay
   %a#overlay-close

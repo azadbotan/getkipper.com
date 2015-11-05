@@ -1,77 +1,32 @@
 ---
 layout: default
 ---
-<div class='row brand'>
+<div class='row'>
   <div class='container'>
-    <h1 class='brand-name'>
-      {{ site.title }}
-    </h1>
-    <p class='brand-description'>
-      {{ site.description }}
-    </p>
-    <div class='brand-actions'>
-      <a class='button reversed with-icon' href='#' id='play-kipper-video'>
-        <img alt='Play video' class='button-icon' src='/assets/media/play.svg'>
-        See it in action
-      </a>
-      <a class='button reversed with-icon' href='{{ site.app_url }}'>
-        <img alt='Apple App Store' class='button-icon apple' src='/assets/media/logo-apple.svg'>
-        Get kipper
-      </a>
+    <div class='home-top'>
+      <div class='brand-name'>
+        <img alt='Kipper' src='/assets/media/logo@2x.png'>
+      </div>
+      <p class='brand-description'>
+        {{ site.description }}
+      </p>
+      <div class='brand-actions'>
+        <!-- %a.button.with-icon#play-kipper-video{ href: '#' } -->
+        <!-- %img.button-icon{ src: '/assets/media/play.svg', alt: 'Play video' } -->
+        <!-- See it in action -->
+        <a class='button with-icon' href='#'>
+          <img alt='Apple App Store' class='button-icon apple' src='/assets/media/logo-apple.svg'>
+          Coming soon
+        </a>
+      </div>
     </div>
   </div>
 </div>
 <div class='row'>
   <div class='container'>
-    <div class='screenshot'>
-      <img alt='' src='//placehold.it/734x1304'>
+    <div class='home-screenshot'>
+      <img alt='Kipper in action' src='/assets/media/kipper-screenshot.png'>
     </div>
-    <ol class='features'>
-      <li class='feature'>
-        <h4 class='feature-title'>
-          All the sizes
-        </h4>
-        <p class='feature-desc'>
-          Kipper exports all the various dimensions you need.
-        </p>
-      </li>
-      <li class='feature'>
-        <h4 class='feature-title'>
-          All your fonts
-        </h4>
-        <p class='feature-desc'>
-          Enjoy the flexibility of a native text editor.
-        </p>
-      </li>
-      <li class='feature'>
-        <h4 class='feature-title'>
-          All the devices
-        </h4>
-        <p class='feature-desc'>
-          Kipper’s got you covered for iPhone and iPad.
-        </p>
-      </li>
-      <li class='feature'>
-        <h4 class='feature-title'>
-          All on your computer
-        </h4>
-        <p class='feature-desc'>
-          Your sceenshots are a local document. No internet required!
-        </p>
-      </li>
-    </ol>
-  </div>
-</div>
-<div class='row grey inspiration'>
-  <div class='container'>
-    <h2 class='inspiration-title'>
-      Visit our gallery of great screenshot examples
-    </h2>
-  </div>
-  <div class='inspiration-teaser'>
-    <a class='button wide' href='#'>
-      Get inspired!
-    </a>
   </div>
 </div>
 <div id='overlay'>
