@@ -11,12 +11,13 @@ layout: default
         {{ site.description }}
       </p>
       <div class='brand-actions'>
-        <!-- %a.button.with-icon#play-kipper-video{ href: '#' } -->
-        <!-- %img.button-icon{ src: '/assets/media/play.svg', alt: 'Play video' } -->
-        <!-- See it in action -->
         <a class='button with-icon' href='https://itunes.apple.com/us/app/kipper/id1056291099?ls=1&amp;mt=12'>
           <img alt='Apple App Store' class='button-icon apple' src='/assets/media/logo-apple.svg'>
           Get Kipper
+        </a>
+        <a class='button with-icon' href='https://www.youtube.com/watch?v=mODMW4NPSUs' id='play-kipper-video'>
+          <img alt='Play video' class='button-icon' src='/assets/media/play.svg'>
+          See it in action
         </a>
       </div>
     </div>
@@ -26,16 +27,6 @@ layout: default
   <div class='container'>
     <div class='home-screenshot'>
       <img alt='Kipper in action' src='/assets/media/kipper-screenshot.png'>
-    </div>
-  </div>
-</div>
-<div id='overlay'>
-  <a id='overlay-close'>
-    <img alt='Close' src='/assets/media/cancel.svg'>
-  </a>
-  <div class='overlay-content'>
-    <div class='kipper-video responsive-iframe'>
-      <div id='video'></div>
     </div>
   </div>
 </div>

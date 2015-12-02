@@ -12,22 +12,14 @@ layout: default
         {{ site.description }}
 
       .brand-actions
-        / %a.button.with-icon#play-kipper-video{ href: '#' }
-        /   %img.button-icon{ src: '/assets/media/play.svg', alt: 'Play video' }
-        /   See it in action
-
         %a.button.with-icon{ href: 'https://itunes.apple.com/us/app/kipper/id1056291099?ls=1&mt=12' }
           %img.button-icon.apple{ src: '/assets/media/logo-apple.svg', alt: 'Apple App Store' }
           Get Kipper
+
+        %a.button.with-icon#play-kipper-video{ href: 'https://www.youtube.com/watch?v=mODMW4NPSUs' }
+          %img.button-icon{ src: '/assets/media/play.svg', alt: 'Play video' }
+          See it in action
 .row
   .container
     .home-screenshot
       %img{ src: '/assets/media/kipper-screenshot.png', alt: 'Kipper in action' }
-
-#overlay
-  %a#overlay-close
-    %img{ src: '/assets/media/cancel.svg', alt: 'Close' }
-
-  .overlay-content
-    .kipper-video.responsive-iframe
-      #video
